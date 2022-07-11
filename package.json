@@ -13,5 +13,14 @@
     "validator": "^13.7.0",
     "yargs": "^17.5.1"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BramsuryaJP/Pertemuan6_Yargs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BramsuryaJP/Pertemuan6_Yargs/issues"
+  },
+  "homepage": "https://github.com/BramsuryaJP/Pertemuan6_Yargs#readme"
 }
