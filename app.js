@@ -11,16 +11,19 @@ yargs.command({
   command: 'add',
   describe: 'Add a new contact',
   builder: {
+    // data nama
     name: {
       describe: 'Contact Name',
       demandOption: true,
       type: 'string',
     },
+    // data nomor telepon
     phoneNumber: {
       describe: 'Contact Phone Number',
       demandOption: true,
       type: 'string',
     },
+    // data email
     email: {
       describe: 'Contact Email',
       demandOption: false,
