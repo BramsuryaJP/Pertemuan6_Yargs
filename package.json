@@ -1,0 +1,17 @@
+{
+  "name": "pertemuan-6-contact-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Bramsurya Johannes Paulus",
+  "license": "ISC",
+  "description": "Contacts App",
+  "dependencies": {
+    "validator": "^13.7.0",
+    "yargs": "^17.5.1"
+  },
+  "keywords": []
+}
