@@ -1,9 +1,9 @@
 // core modules
 // file system
 const fs = require('fs');
-//readline
-const readline = require('readline');
-//third party module
+// readline
+// const readline = require('readline');
+// third party module
 const validator = require('validator');
 // readline interface
 // const rl = readline.createInterface({
@@ -24,13 +24,13 @@ if (!fs.existsSync(dataPath)) {
 }
 
 // membuat fungsi untuk menanyakan pertanyaan
-const questions = (ask) => {
-  return new Promise((resolve, reject) => {
-    rl.question(ask, (inputVariable) => {
-      resolve(inputVariable);
-    })
-  })
-}
+// const questions = (ask) => {
+//   return new Promise((resolve, reject) => {
+//     rl.question(ask, (inputVariable) => {
+//       resolve(inputVariable);
+//     })
+//   })
+// }
 
 // membuat fungsi untuk menampung jawaban
 const getAnswer = (name, phoneNumber, email) => {
