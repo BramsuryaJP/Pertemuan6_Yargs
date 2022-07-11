@@ -39,17 +39,17 @@ const getAnswer = (name, phoneNumber, email) => {
   const contacts = JSON.parse(file);
 
   // validasi nama menggunakan method find
-  const duplicate = contacts.find((contact) => contact.name === name);
+  const duplicate = contacts.find((contact) => contact.name.toLowerCase() === name.toLowerCase());
   if (duplicate) {
     console.log("Nama sudah terdaftar, silahkan gunakan nama lain");
     // mengembalikan nilai false jika duplikat
     return false;
+  } else {
+    contacts.push(contact);
+    fs.writeFileSync('data/contacts.json', JSON.stringify(contacts, null, 2));
+    console.log(`Terimakasih ${name} sudah memasukkan data`);
+    // rl.close();
   }
-
-  contacts.push(contact);
-  fs.writeFileSync('data/contacts.json', JSON.stringify(contacts, null, 2));
-  console.log(`Terimakasih ${name} sudah memasukkan data`);
-  // rl.close();
 }
 
 module.exports = { getAnswer }
